@@ -50,7 +50,7 @@ def load_agent():
     llm = ChatOpenAI(model="gpt-4o-mini", temperature=0, openai_api_key=OPENAI_API_KEY)
     agent = create_sql_agent(
         llm=llm,
-        db=db
+        db=db,
         verbose=False,
     )
     return agent, db
