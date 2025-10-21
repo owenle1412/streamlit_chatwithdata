@@ -16,7 +16,7 @@ from langchain.agents.agent_types import AgentType
 # if not OPENAI_API_KEY:
 #     st.error("❌ Missing OpenAI API key. Please set OPENAI_API_KEY in Streamlit Secrets.")
 #     st.stop()
-OPENAI_API_KEY="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"
+OPENAI_API_KEY="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"
 # =========================================================
 # 🗂️ Paths and setup
 # =========================================================
