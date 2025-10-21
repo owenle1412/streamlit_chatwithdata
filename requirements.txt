@@ -3,8 +3,8 @@ pandas
 sqlalchemy
 python-dotenv
 openai
-langchain>=0.2.0
-langchain-community
-langchain-openai
+langchain>=0.3.0
+langchain-community>=0.3.0
+langchain-openai>=0.3.0
 langchain-core
 altair
