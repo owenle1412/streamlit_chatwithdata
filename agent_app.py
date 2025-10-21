@@ -6,7 +6,6 @@ from sqlalchemy import create_engine
 from langchain_openai import ChatOpenAI
 from langchain_community.utilities import SQLDatabase
 from langchain_community.agent_toolkits.sql.base import create_sql_agent
-from langchain.agents import AgentType
 
 # =========================================================
 # 🔑 Streamlit Cloud secret management
@@ -51,8 +50,7 @@ def load_agent():
     llm = ChatOpenAI(model="gpt-4o-mini", temperature=0, openai_api_key=OPENAI_API_KEY)
     agent = create_sql_agent(
         llm=llm,
-        db=db,
-        agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
+        db=db
         verbose=False,
     )
     return agent, db
