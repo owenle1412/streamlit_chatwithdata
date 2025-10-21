@@ -1,0 +1,10 @@
+streamlit
+pandas
+sqlalchemy
+python-dotenv
+openai
+langchain
+langchain-community
+langchain-openai
+langchain-core
+altair
